@@ -1,0 +1,70 @@
+.home {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home__first {
+    width: 40%;
+    font-size: 1.50em;
+    letter-spacing: 1px;
+    line-height: 25px;
+    background: #000;
+    border-radius: 30px;
+    padding: 10px;
+}
+.home__button{
+    border: none;
+    outline: none;
+    padding: 5px;
+    background: rgb(5, 114, 99);
+    color: rgb(255, 255, 255);
+    border-radius: 999px;
+    font-family: monospace;
+}
+.home__button:hover{
+    background: rgb(6, 37, 66);
+}
+.home__morsalin{
+    color: aqua;
+    
+}
+@keyframes morsalin {
+    from {
+        color: rgb(51, 153, 73);
+    }
+
+    50% {
+        transform: scale(1.1);
+        color: rgb(101, 10, 161);
+
+    }
+
+    100% {
+        transform: scale(0.9);
+        color: rgb(45, 122, 15);
+
+    }
+}
+
+.home__middle {
+    width: 30%;
+    animation: middle infinite 10000ms;
+}
+
+@keyframes middle {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
